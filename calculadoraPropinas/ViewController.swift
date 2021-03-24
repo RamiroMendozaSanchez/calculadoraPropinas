@@ -44,8 +44,8 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "send_view" {
             let destino_PC = segue.destination as! PrecioController
-            let mycalculos = calcular_precio()
-            destino_PC.precio_total = mycalculos.sendValor()
+            //let mycalculos = calcular_precio()
+            destino_PC.precio_total = cach_data.sendValor()
             
         }
     }

@@ -15,12 +15,16 @@ class PrecioController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label_precio_total.text = precio_total
+        label_precio_total.text = "\(precio_total!) pesos"
 
         
     }
     
-
+    
+    @IBAction func regresar(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

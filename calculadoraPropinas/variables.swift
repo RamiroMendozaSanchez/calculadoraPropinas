@@ -3,5 +3,5 @@
 import Foundation
 
 struct variables {
-    let total: String
+    let total: Float
 }
